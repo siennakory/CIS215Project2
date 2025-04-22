@@ -3,71 +3,88 @@
     <head>
         <title>Survey: PHP Questions</title>
     </head>
-<body>
+    <body>
 
-<!-- Big takeaways: required keyword, make sure value is in there, feel free to use other attributes! -->
+        <h1>Survey: PHP Questions</h1>
+        <!-- Big takeaways: required keyword, make sure value is in there, feel free to use other attributes! -->
 
-<form action="project1submit.php" method="post" class="survey">
+        <form action="project1submit.php" method="post" class="survey">
 
-<fieldset>
+            <fieldset>
+                <legend>Personal Information:</legend>
 
-<label>Enter your email: </label>
-<input type="email" name="email-name" id="email-id" required>
+                <label>Enter your email: </label>
+                <input type="email" name="email-name" id="email-id" required>
 
-<label>Enter your password: </label>
-<input type="password" name="pw-name" id="pw-id" required>
+                <label>Enter your password: </label>
+                <input type="password" name="pw-name" id="pw-id" required>
 
-</fieldset>
+            </fieldset>
 
-<div>
-<label>What age are you? </label>
-<div>
-<label> <input type="radio" name="age" id="age-0" value="0" required>
-0-12 </label>
-</div>
-<?php
+            <fieldset>
+                <legend>Demographic Information:</legend>
 
-for($i=13;$i<65;$i=$i + 5){
-    $j = $i + 4;
-    print("<div><label><input type='radio' name='age' id='age-$i'value='$i'>
-    $i-$j </label></div>");
-}
+                <div>
+                    <label for="age">What age are you?</label>
 
-?>
-<div>
-<label> <input type="radio" name="age" id="age-68" value="68">
-68+ </label>
-</div>
-</div>
+                    <div>
+                        <label> <input type="radio" name="age" id="age-0" value="0" required>
+                        0-12 </label>
+                    </div>
 
-<div>
-<select name="gender" id="gender">
-    <option value="">--Please select your gender--</option>
-    <option value="ma">Male</option>
-    <option value="fe">Female</option>
-    <option value="nb">Nonbinary</option>
-    <option value="gf">Genderfluid</option>
-    <option value="ag">Agender</option>
-    <option value="ot">Choose not to say/Other</option>
-</select>
-</div>
+                    <?php
 
-<div>
-    <label> What version of PHP do you use? (only include the main version number) <input type="number" name="version" id="version" min="1", max="9" required> </label>
-</div>
+                        for($i=13;$i<65;$i=$i + 5){
+                            $j = $i + 4;
+                            print("<div><label><input type='radio' name='age' id='age-$i'value='$i'>
+                            $i-$j </label></div>");
+                        }
 
-<div>
-    <div>
-        Please answer in 120 characters or fewer.
-    </div>
-    <label> What is your favorite part of PHP?     
-    <input type=text name="favorite" id="favorite" required></label>
-</div>
+                    ?>
 
-<button type="submit" name="button-submit-form" id = "button-submit-form-id">Submit</button>
+                    <div>
+                        <label> <input type="radio" name="age" id="age-68" value="68">
+                        68+ </label>
+                    </div>
+                    </div>
 
-</form>
+                <div>
+                    <label for="gender">What is your gender?</label>
+                    <select name="gender" id="gender">
+                        <option value="">--Please select your gender--</option>
+                        <option value="ma">Male</option>
+                        <option value="fe">Female</option>
+                        <option value="nb">Nonbinary</option>
+                        <option value="gf">Genderfluid</option>
+                        <option value="ag">Agender</option>
+                        <option value="ot">Choose not to say/Other</option>
+                    </select>
+                </div>
+            </fieldset>
 
-<div><a href='project1data.php'>View data page here</a></div>
+            <fieldset>
+                <legend>PHP Questions:</legend>
 
-</body></html>
+                <div>
+                    <label> What version of PHP do you use? (only include the main version number) <input type="number" name="version" id="version" min="1", max="9" required> </label>
+                </div>
+
+                <div>
+                    <div>
+                        Please answer in 120 characters or fewer.
+                    </div>
+                    <label for="favorite"> What is your favorite part of PHP?</label>  
+                    <div>
+                        <textarea name="favorite" id="favorite" rows="4" cols="40" minlength="1" maxlength="120" required></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" name="button-submit-form" id = "button-submit-form-id">Submit</button>
+
+        </form>
+
+        <div><a href='project1data.php'>View data page here</a></div>
+
+    </body>
+</html>
