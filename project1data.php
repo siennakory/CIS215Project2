@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>PHP Questions: Data</title>
+        <script src="bgcolors.js" defer></script>
     </head>
     <body>
 
