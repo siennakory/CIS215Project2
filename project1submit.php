@@ -6,7 +6,9 @@
     <body>
 
         <div>
-            
+            <label for="color-input">Change your background color!</label>
+            <input type="color" id="color-input" name="color-name">
+            <button type="button" name="color-button-name" id="color-button">Select Color</button>
         </div>
 
         <?php

@@ -10,6 +10,12 @@
 
         <form action="project1submit.php" method="post" class="survey">
 
+            <div>
+                <label for="color-input">Change your background color!</label>
+                <input type="color" id="color-input" name="color-name">
+                <button type="button" name="color-button-name" id="color-button">Select Color</button>
+            </div>
+
             <fieldset>
                 <legend>Personal Information:</legend>
 
