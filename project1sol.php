@@ -3,7 +3,8 @@
     <head>
         <title>Survey: PHP Questions</title>
         <script src="bgcolors.js" defer></script>
-        <link rel="stylesheet" href="format1.css">
+                <!--leave href empty-->
+        <link rel="stylesheet" href="">
     </head>
     <body>
 
@@ -17,7 +18,14 @@
                 <input type="color" id="color-input" name="color-name">
                 <button type="button" name="color-button-name" id="color-button">Select Color</button>
             </div>
-
+            <div>
+                <label for="format_select">Change format</label>
+                <select name="format_changer" id="format_select">
+                    <option value="">Change format</option>
+                    <option value="night">night</option>
+                </select>
+                <button type="button" name="format_button_name" id="format_button">select format</button>
+            </div>
             <fieldset>
                 <legend>Personal Information:</legend>
 
