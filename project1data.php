@@ -186,8 +186,8 @@
                 $prep_selectfav->execute();
                 $favorite_data = $prep_selectfav->fetchAll();
                 $favorite_testimonies = [];
-                for($i=0;$i<5;$i++){  # limit either by doing the limit 5 or only doing 5 loops!
-                    $favorite_testimonies []= htmlentities($favorite_data[$i]["favorite"]);
+                foreach($favorite_data as $data){  # limit either by doing the limit 5 or only doing 5 loops!
+                    $favorite_testimonies []= $data["favorite"];
                 }
                 return $favorite_testimonies;
             }
