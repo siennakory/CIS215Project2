@@ -20,6 +20,10 @@
             <fieldset>
                 <legend>Personal Information:</legend>
 
+                <!-- THIS IS THE NEW QUESTION -Sienna -->
+                <label>Enter your name: </label>
+                <input type="text" name="name" id="name-id" required>
+
                 <label>Enter your email: </label>
                 <input type="email" name="email-name" id="email-id" required>
 
@@ -78,7 +82,7 @@
 
                 <div>
                     <div>
-                        Please answer in 120 characters or fewer.
+                        <p>Please answer in 120 characters or fewer.</p>
                     </div>
                     <label for="favorite"> What is your favorite part of PHP?</label>  
                     <div>
