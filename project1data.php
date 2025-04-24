@@ -182,12 +182,12 @@
              */
             function favorite_thing(){
                 global $db;
-                $prep_selectfav = $db->prepare("SELECT favorite FROM project_data ORDER BY RAND() LIMIT 5");
+                $prep_selectfav = $db->prepare("SELECT * FROM project_data ORDER BY RAND() LIMIT 5");
                 $prep_selectfav->execute();
                 $favorite_data = $prep_selectfav->fetchAll();
                 $favorite_testimonies = [];
                 foreach($favorite_data as $data){  # limit either by doing the limit 5 or only doing 5 loops!
-                    $favorite_testimonies []= $data["favorite"];
+                    $favorite_testimonies []= array($data["name"], $data["favorite"]);
                 }
                 return $favorite_testimonies;
             }
@@ -230,7 +230,9 @@
             print("<h2>Favorite thing about PHP:</h2>");
             print("<div>");
             foreach(favorite_thing() as $value){
-                print("<div>$value</div>");
+                $fav_name = $value[0];
+                $fav_text = $value[1];
+                print("<div><h3>$fav_name:</h3> <p>$fav_text</p></div>");
             }
             print("</div>");
 
