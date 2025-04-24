@@ -111,7 +111,7 @@
                 $version = (int)$_POST["version"];
                 $favorite = htmlentities($_POST["favorite"]);
 
-                return array($email, $age, $gender, $version, $favorite);
+                return array($name, $email, $age, $gender, $version, $favorite);
             }
 
             /**
@@ -119,7 +119,7 @@
              */
             function add_data(){
                 global $db;
-                $prep_insert = $db->prepare("INSERT INTO project_data (email, age, gender, version, favorite) values (?,?,?,?,?)");
+                $prep_insert = $db->prepare("INSERT INTO project_data (name, email, age, gender, version, favorite) values (?,?,?,?,?,?)");
                 $prep_insert->execute(sanitize());
             }
 
