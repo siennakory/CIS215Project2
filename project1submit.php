@@ -35,6 +35,7 @@
                     return "Error: Incorrect Password.";
                 }
                 # Next, let's make sure everything was filled in:
+                #I added "name" to this function -Sienna
                 if(($_POST["name"] == NULL) or ($_POST["email-name"] == NULL) or ($_POST["age"] == NULL) or ($_POST["gender"] == "") or ($_POST["version"] == NULL) or ($_POST["favorite"] == NULL)){
                     return "Error: You have not filled in all questions.";
                 }
@@ -104,7 +105,7 @@
              * Sanitize returns sanitized data in the form of an array
              */
             function sanitize(){
-                $name = filter_var($_POST["email-name"]);
+                $name = filter_var($_POST["name"]);
                 $email = filter_var($_POST["email-name"], FILTER_VALIDATE_EMAIL);
                 $age = (int)$_POST["age"];
                 $gender = htmlentities($_POST["gender"]);
