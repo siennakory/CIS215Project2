@@ -16,7 +16,7 @@
             /**
              * Note: I created my SQL table in PuTTY using the following command:
              * 
-             * CREATE TABLE project_data (id INT PRIMARY KEY AUTO_INCREMENT, email VARCHAR(320), age INT, gender CHAR(2), version INT, favorite VARCHAR(120));
+             * CREATE TABLE project_data (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50), email VARCHAR(320), age INT, gender CHAR(2), version INT, favorite VARCHAR(120));
              */
 
             # Retrieved the hashed password as discussed in classes.
@@ -35,10 +35,15 @@
                     return "Error: Incorrect Password.";
                 }
                 # Next, let's make sure everything was filled in:
-                if(($_POST["email-name"] == NULL) or ($_POST["age"] == NULL) or ($_POST["gender"] == "") or ($_POST["version"] == NULL) or ($_POST["favorite"] == NULL)){
+                if(($_POST["name"] == NULL) or ($_POST["email-name"] == NULL) or ($_POST["age"] == NULL) or ($_POST["gender"] == "") or ($_POST["version"] == NULL) or ($_POST["favorite"] == NULL)){
                     return "Error: You have not filled in all questions.";
                 }
                 # Now, let's make sure the results make sense.
+
+                # Name
+                if (ctype_alpha(str_replace(" ", "", $_POST["name"])) == False){
+                    return "Please enter a name with no numbers.";
+                };
 
                 # Email
                 if(!filter_var($_POST["email-name"], FILTER_VALIDATE_EMAIL)){
@@ -99,6 +104,7 @@
              * Sanitize returns sanitized data in the form of an array
              */
             function sanitize(){
+                $name = filter_var($_POST["email-name"]);
                 $email = filter_var($_POST["email-name"], FILTER_VALIDATE_EMAIL);
                 $age = (int)$_POST["age"];
                 $gender = htmlentities($_POST["gender"]);
