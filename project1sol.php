@@ -3,6 +3,7 @@
     <head>
         <title>Survey: PHP Questions</title>
         <script src="bgcolors.js" defer></script>
+        <link rel="stylesheet" href="format1.css">
     </head>
     <body>
 
