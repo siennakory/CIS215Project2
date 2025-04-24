@@ -232,7 +232,7 @@
             foreach(favorite_thing() as $value){
                 $fav_name = $value[0];
                 $fav_text = $value[1];
-                print("<div>$fav_name: $fav_text</div>");
+                print("<div><h3>$fav_name:</h3> <p>$fav_text</p></div>");
             }
             print("</div>");
 
