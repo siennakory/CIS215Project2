@@ -6,12 +6,6 @@
     </head>
     <body>
 
-        <div>
-            <label for="color-input">Change your background color!</label>
-            <input type="color" id="color-input" name="color-name">
-            <button type="button" name="color-button-name" id="color-button">Select Color</button>
-        </div>
-
         <?php
 
             require ('dbconfig.php');
@@ -212,6 +206,11 @@
             }
 
             print("<h1>Survey Data</h1>");
+            print('<div>
+            <label for="color-input">Change your background color!</label>
+            <input type="color" id="color-input" name="color-name">
+            <button type="button" name="color-button-name" id="color-button">Select Color</button>
+        </div>');
 
             $prep_selectnum = $db->prepare("SELECT count(email) FROM project_data");
             $prep_selectnum->execute();
