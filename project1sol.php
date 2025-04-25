@@ -3,11 +3,12 @@
     <head>
         <title>Survey: PHP Questions</title>
         <script src="bgcolors.js" defer></script>
+        <script src="format_changer.js" defer></script>
                 <!--leave href empty-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="none.css">
     </head>
     <body>
-
+        
         <h1>Survey: PHP Questions</h1>
         <!-- Big takeaways: required keyword, make sure value is in there, feel free to use other attributes! -->
 
@@ -21,8 +22,8 @@
             <div>
                 <label for="format_select">Change format</label>
                 <select name="format_changer" id="format_select">
-                    <option value="">Change format</option>
-                    <option value="night">night</option>
+                    <option value="0">none</option>
+                    <option value="1">night</option>
                 </select>
                 <button type="button" name="format_button_name" id="format_button">select format</button>
             </div>
