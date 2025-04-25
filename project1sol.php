@@ -22,8 +22,8 @@
             <div>
                 <label for="format_select">Change format</label>
                 <select name="format_changer" id="format_select">
-                    <option value="0">none</option>
-                    <option value="1">night</option>
+                    <option value="none">none</option>
+                    <option value="night">night</option>
                 </select>
                 <button type="button" name="format_button_name" id="format_button">select format</button>
             </div>
