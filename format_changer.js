@@ -6,5 +6,9 @@ formatChanger.addEventListener("click",(event)=>{
         document.querySelector("link").setAttribute("href","format1.css");
     }else if(formatValue == "none"){
         document.querySelector("link").setAttribute("href","none.css");
+    }else if(formatValue == "forset"){
+        document.querySelector("link").setAttribute("href","format2.css");
+    }else if(formatValue == "hacker"){
+        document.querySelector("link").setAttribute("href","format3.css");
     };
 });
