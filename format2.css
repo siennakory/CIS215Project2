@@ -1,0 +1,13 @@
+body{
+    background-color: #4D5D53;
+    font-family: fantasy;
+}
+fieldset, legend{
+    background-color: #8f9779;
+}
+legend{
+    border: solid white 0.05rem;
+}
+a{
+    color: aqua;
+}
