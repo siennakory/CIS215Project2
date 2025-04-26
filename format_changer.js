@@ -10,5 +10,7 @@ formatChanger.addEventListener("click",(event)=>{
         document.querySelector("link").setAttribute("href","format2.css");
     }else if(formatValue == "hacker"){
         document.querySelector("link").setAttribute("href","format3.css");
+    }else if(formatValue == "why"){
+        document.querySelector("link").setAttribute("href","format4.css");
     };
 });
