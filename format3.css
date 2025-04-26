@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    font-family: monospace;
+    color: green;
+}
+legend{
+    border: solid green 0.05rem;
+}
+fieldset{
+    border-color: green;
+}
+a{
+    color: aqua;
+}
