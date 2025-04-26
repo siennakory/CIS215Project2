@@ -26,6 +26,7 @@
                     <option value="night">night</option>
                     <option value="forset">forest</option>
                     <option value="hacker">hacker</option>
+                    <option value="why">why?</option>
                 </select>
                 <button type="button" name="format_button_name" id="format_button">select format</button>
             </div>
