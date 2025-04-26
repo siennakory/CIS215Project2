@@ -24,6 +24,8 @@
                 <select name="format_changer" id="format_select">
                     <option value="none">none</option>
                     <option value="night">night</option>
+                    <option value="forset">forest</option>
+                    <option value="hacker">hacker</option>
                 </select>
                 <button type="button" name="format_button_name" id="format_button">select format</button>
             </div>
