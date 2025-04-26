@@ -1,21 +1,12 @@
 body{
     background-color: black;
-}
-h1{
     color: white;
 }
-label{
-    color: white;
-}
+
 fieldset{
     background-color: darkslategrey;
 }
-legend{
-    color: white;
-}
-p{
-    color: white;
-}
+
 a{
     color: aqua;
 }
