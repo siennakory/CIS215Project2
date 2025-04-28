@@ -4,6 +4,7 @@
         <title>Survey: PHP Questions</title>
         <script src="bgcolors.js" defer></script>
         <script src="format_changer.js" defer></script>
+        <script src="charcount.js" defer></script>
                 <!--leave href empty-->
         <link rel="stylesheet" href="none.css">
     </head>
@@ -101,6 +102,7 @@
                     <div>
                         <textarea name="favorite" id="favorite" rows="4" cols="40" minlength="1" maxlength="120" required></textarea>
                     </div>
+                    <div id="char-count" style="font-size: 0.8em"></div>
                 </div>
             </fieldset>
 
