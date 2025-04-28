@@ -8,8 +8,6 @@ function checkCount(event){
     console.log(textBoxCount);
     let charCount = (120 - textBoxCount);
     console.log(charCount);
-    let lastChar = (textBoxCount - 1);
-    console.log(lastChar);
 
     if (textBoxCount > 70){
         divcount.textContent = charCount;
@@ -18,7 +16,7 @@ function checkCount(event){
     };
 
     if (textBoxCount > 120) {
-        textBox.value = currentText.substring(1, lastChar);
+        textBox.value = currentText.substring(1, 120);
     };
 
 };
