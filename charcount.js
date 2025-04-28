@@ -12,10 +12,6 @@ function checkCount(event){
         divcount.textContent = "";
     };
 
-    if (textBoxCount > 120) {
-        textBox.value = currentText.substring(1, 120);
-    };
-
 };
 
 textBox.addEventListener("keyup", checkCount);

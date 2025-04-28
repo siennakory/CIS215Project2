@@ -100,7 +100,7 @@
                     </div>
                     <label for="favorite"> What is your favorite part of PHP?</label>  
                     <div>
-                        <textarea name="favorite" id="favorite" rows="4" cols="40" minlength="1" maxlength="120" required></textarea>
+                        <textarea name="favorite" id="favorite" rows="4" cols="40" minlength="1" maxlength ="120" required></textarea>
                     </div>
                     <div id="char-count" style="font-size: 0.8em"></div>
                 </div>
