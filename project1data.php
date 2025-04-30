@@ -3,6 +3,7 @@
     <head>
         <title>PHP Questions: Data</title>
         <script src="bgcolors.js" defer></script>
+        <script src="deletedata.js" defer></script>
     </head>
     <body>
 
@@ -210,7 +211,13 @@
             <label for="color-input">Change your background color!</label>
             <input type="color" id="color-input" name="color-name">
             <button type="button" name="color-button-name" id="color-button">Select Color</button>
-        </div>');
+            </div>');
+            print('<div>
+            <label for="delete-data">Enter your email to delete your data:</label>
+            <input type="email" id="delete-data" name="delete-data">
+            <button type="button" id="delete-button" name="delete-button">Delete My Data</button>
+            <div id="delete-success"></div>
+            </div>');
 
             $prep_selectnum = $db->prepare("SELECT count(email) FROM project_data");
             $prep_selectnum->execute();
