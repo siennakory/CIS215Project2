@@ -11,7 +11,18 @@
             <input type="color" id="color-input" name="color-name">
             <button type="button" name="color-button-name" id="color-button">Select Color</button>
         </div>
-
+        
+        <div>
+                <label for="format_select">Change format</label>
+                <select name="format_changer" id="format_select">
+                    <option value="none">none</option>
+                    <option value="night">night</option>
+                    <option value="forset">forest</option>
+                    <option value="hacker">hacker</option>
+                    <option value="why">why?</option>
+                </select>
+                <button type="button" name="format_button_name" id="format_button">select format</button>
+            </div>
         <?php
             /**
              * Note: I created my SQL table in PuTTY using the following command:
