@@ -1,5 +1,5 @@
 const textBox = document.querySelector("textarea[id='favorite']");
-const divcount = document.querySelector("div[id='char-count']")
+const divcount = document.querySelector("div[id='char-count']");
 
 function checkCount(event){
     let currentText = event.target.value;
