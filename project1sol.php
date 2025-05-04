@@ -40,6 +40,7 @@
 
                 <label>Enter your email: </label>
                 <input type="email" name="email-name" id="email-id" required>
+                <span></span>
 
                 <label>Enter your password: </label>
                 <input type="password" name="pw-name" id="pw-id" required>

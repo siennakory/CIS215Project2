@@ -8,7 +8,7 @@
     <body>
 
         <?php
-
+            /**hi */
             require ('dbconfig.php');
             $db = connectDB();
 
