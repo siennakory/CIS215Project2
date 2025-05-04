@@ -5,7 +5,9 @@
         <script src="bgcolors.js" defer></script>
         <script src="format_changer.js" defer></script>
         <script src="charcount.js" defer></script>
-                <!--leave href empty-->
+        <script src="email.js" defer></script>
+        <script src="otherTxtBox.js" defer></script>
+        <script src="tooltips.js" defer></script>
         <link rel="stylesheet" href="none.css">
     </head>
     <body>
@@ -14,7 +16,7 @@
         <!-- Big takeaways: required keyword, make sure value is in there, feel free to use other attributes! -->
 
         <form action="project1submit.php" method="post" class="survey">
-
+            
             <div>
                 <label for="color-input">Change your background color!</label>
                 <input type="color" id="color-input" name="color-name">
@@ -44,6 +46,7 @@
 
                 <label>Enter your password: </label>
                 <input type="password" name="pw-name" id="pw-id" required>
+                <div id="password-div"></div>
 
             </fieldset>
 
@@ -85,6 +88,7 @@
                         <option value="ag">Agender</option>
                         <option value="ot">Choose not to say/Other</option>
                     </select>
+                    <input type="text" id="other_input" hidden>
                 </div>
             </fieldset>
 
